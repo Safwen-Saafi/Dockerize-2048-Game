@@ -1,5 +1,6 @@
 # Dockerize-2048-Game
 
+![mac](https://github.com/user-attachments/assets/80b12450-63b5-452f-a18b-eefcf83ac99e)
 
 ## OVERVIEW
 A simple project showcasing a web application that serves the classic 2048 game using Nginx within a Docker container.<br>
