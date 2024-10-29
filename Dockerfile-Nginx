@@ -1,0 +1,9 @@
+FROM nginx:latest
+
+RUN apt-get update && apt-get install -y curl unzip && \
+    curl -o /usr/share/nginx/html/master.zip -L https://codeload.github.com/gabrielecirulli/2048/zip/master && \
+    cd /usr/share/nginx/html/ && unzip master.zip && \
+    mv 2048-master/* . && rm -rf 2048-master master.zip
+
+# Expose port 80 optional because it’s already exposed by the nginx image
+EXPOSE 80
