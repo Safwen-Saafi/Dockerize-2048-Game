@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:alpine
 
 RUN apt-get update && apt-get install -y curl unzip && \
     curl -o /usr/share/nginx/html/master.zip -L https://codeload.github.com/gabrielecirulli/2048/zip/master && \
